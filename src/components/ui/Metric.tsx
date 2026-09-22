@@ -1,0 +1,1 @@
+export function Metric({ label, value, note, tone = 'green' }: { label: string; value: string | number; note: string; tone?: 'green' | 'clay' }) { return <div className="metric-block"><span>{label}</span><strong>{value}</strong><small className={tone}>{note}</small></div> }
